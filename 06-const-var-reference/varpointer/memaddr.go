@@ -32,7 +32,7 @@ func IncScoreFailed() {
 	fmt.Println(score) // 10
 }
 
-// 不能修改入参 score 参数值
+// 可以修改入参 score 参数值
 // 函数调用的时候参数被拷贝
 func canUpdateScore(ptrScore *int) {
 	fmt.Println(ptrScore) // 已经是地址了 0xc00001c140
@@ -40,8 +40,8 @@ func canUpdateScore(ptrScore *int) {
 	fmt.Println(*ptrScore) // 11
 }
 
-// IncScoreSuccssed 调高分数
-func IncScoreSuccssed() {
+// IncScoreSuccessed 调高分数
+func IncScoreSuccessed() {
 	score := 10
 	fmt.Println(&score) // 0xc00001c140
 	canUpdateScore(&score)
