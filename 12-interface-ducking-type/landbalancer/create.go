@@ -9,3 +9,13 @@ func New(strategy string) Selector {
 		return new(DefaultBalancer)
 	}
 }
+
+//NewDefaultBalancer 默认
+func NewDefaultBalancer() Selector {
+	return new(DefaultBalancer)
+}
+
+//NewRandomBalancer 随机
+func NewRandomBalancer() Selector {
+	return new(RandomBalancer)
+}
