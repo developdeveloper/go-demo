@@ -2,3 +2,4 @@ main
 log
 tmp
 .DS_Store
+vendor
