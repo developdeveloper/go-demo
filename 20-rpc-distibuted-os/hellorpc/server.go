@@ -8,8 +8,8 @@ import (
 //HelloService 打招呼的服务
 type HelloService struct{}
 
-func (hs *HelloService) Say(request string, reply *string) error {
-	*reply = "hi, " + request
+func (hs *HelloService) Say(name string, reply *string) error {
+	*reply = "hi, " + name
 	return nil
 }
 
