@@ -8,6 +8,11 @@ import (
 func startHelloRpcClient() {
 	var reply string
 	client, _ := rpc.Dial("tcp", "127.0.0.1:3000")
+
+	//使用json编码
+	//conn, _ := net.Dial("tcp", "127.0.0.1:3000")
+	//client := rpc.NewClientWithCodec(jsonrpc.NewClientCodec(conn))
+
 	client.Call("HelloService.Say", "zhangsan", &reply)
 
 	//异步

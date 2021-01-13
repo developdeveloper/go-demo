@@ -18,4 +18,7 @@ func startHelloRpcServer() {
 	listener, _ := net.Listen("tcp", ":3000")
 	conn, _ := listener.Accept()
 	rpc.ServeConn(conn)
+
+	//使用 json 编码
+	//rpc.ServeCodec(jsonrpc.NewServerCodec(conn))
 }
