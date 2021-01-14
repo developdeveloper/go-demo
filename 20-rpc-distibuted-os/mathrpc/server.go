@@ -21,6 +21,8 @@ func (ms *MathService) Calc(expr Expr, reply *int) error {
 func startMathRpcServer() {
 	rpc.RegisterName("MathService", new(MathService))
 	listener, _ := net.Listen("tcp", ":3000")
+
+	//使用 for 循环服务多个客户端
 	conn, _ := listener.Accept()
 	rpc.ServeConn(conn)
 }

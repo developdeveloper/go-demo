@@ -16,6 +16,8 @@ func (hs *HelloService) Say(name string, reply *string) error {
 func startHelloRpcServer() {
 	rpc.RegisterName("HelloService", new(HelloService))
 	listener, _ := net.Listen("tcp", ":3000")
+
+	//使用 for 循环服务多个客户端
 	conn, _ := listener.Accept()
 	rpc.ServeConn(conn)
 
