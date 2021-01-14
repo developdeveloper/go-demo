@@ -6,7 +6,7 @@ const HelloServiceName = "20-rpc-distibuted-os/betterrpc/HelloService"
 
 // Server Func
 type HelloServiceInterface = interface {
-	Hello(request string, reply *string) error
+	Say(name string, reply *string) error
 }
 
 func RegisterHelloService(svc HelloServiceInterface) error {

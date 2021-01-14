@@ -17,6 +17,7 @@ func startHelloRpcClient() {
 
 	//异步
 	//done := client.Go("HelloService.Say", "zhangsan", &reply, nil).Done
+	// 继续做其它的事情
 	//<-done
 
 	fmt.Println(reply)

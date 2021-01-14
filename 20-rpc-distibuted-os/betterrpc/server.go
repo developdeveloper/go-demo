@@ -7,7 +7,7 @@ import (
 
 type HelloService struct{}
 
-func (p *HelloService) Hello(name string, reply *string) error {
+func (p *HelloService) Say(name string, reply *string) error {
 	*reply = "hi, " + name
 	return nil
 }
