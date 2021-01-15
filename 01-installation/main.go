@@ -8,5 +8,5 @@ import (
 // 使用 ./main 执行
 
 func main() {
-	fmt.Println("hello world")
+	fmt.Println("protohello world")
 }

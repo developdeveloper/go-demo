@@ -10,7 +10,7 @@ func main() {
 	// fmt.Println("boring\thello")
 
 	// 用函数封装后重用
-	// 不在乎怎么说 "hello" 的功能，能完成说  "hello" 的功能就行了
+	// 不在乎怎么说 "protohello" 的功能，能完成说  "protohello" 的功能就行了
 	sayHello()
 	sayHello()
 
@@ -30,7 +30,7 @@ func doNothing() {
 }
 
 func sayHello() {
-	fmt.Println("hello")
+	fmt.Println("protohello")
 }
 
 // 直接调用一个匿名函数

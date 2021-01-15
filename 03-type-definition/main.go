@@ -27,7 +27,7 @@ func printSpace() {
 }
 
 func printHello() {
-	str := "hello"
+	str := "protohello"
 	// fmt.Printf("%T\n", str)
 	fmt.Printf(str)
 }

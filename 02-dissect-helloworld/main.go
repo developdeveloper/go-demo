@@ -7,7 +7,7 @@ import (
 // 程序运行的入口
 
 func main() {
-	// fmt.Println("hello world")
+	// fmt.Println("protohello world")
 	str.SayHelloInEnglish()
 	str.SayHelloInChinese()
 }

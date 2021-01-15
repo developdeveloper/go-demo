@@ -13,7 +13,7 @@ import (
 type MyReader struct{}
 
 func (mr *MyReader) Read(p []byte) (n int, err error) {
-	copy(p, []byte("hello"))
+	copy(p, []byte("protohello"))
 	return 5, nil
 }
 
@@ -53,7 +53,7 @@ func AppendFileContentTest() {
 		fmt.Printf("open file err: %s", err)
 	}
 
-	buf := bytes.NewBufferString("hello world, from file:")
+	buf := bytes.NewBufferString("protohello world, from file:")
 	buf.ReadFrom(file) // bytes.Buffer 实现了 ReadFrom 接口，而 *File 实现了 Reader 接口
 	fmt.Println(buf.String())
 }
