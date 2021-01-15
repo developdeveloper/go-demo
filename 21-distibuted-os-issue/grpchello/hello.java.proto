@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package grpchello;
+
+option java_generic_services = true;
+option java_multiple_files = true;
+option java_package = "com.wangbo.proto";
+option java_outer_classname = "HelloProto";
+
+message Person {
+    string name = 1;
+}
+
+message Result {
+    string text = 1;
+}
+
+service HelloService {
+    rpc Say (Person) returns (Result);
+}
