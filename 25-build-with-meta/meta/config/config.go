@@ -4,4 +4,5 @@ var (
 	Version   = ""
 	GitHash   = ""
 	BuildTime = ""
+	GoVersion = ""
 )

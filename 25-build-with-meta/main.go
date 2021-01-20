@@ -16,5 +16,6 @@ func main() {
 		fmt.Printf("version:\t\t%s\n", config.Version)
 		fmt.Printf("git hash:\t\t%s\n", config.GitHash)
 		fmt.Printf("build time:\t\t%s\n", config.BuildTime)
+		fmt.Printf("go version:\t\t%s\n", config.GoVersion)
 	}
 }
