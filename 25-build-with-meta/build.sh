@@ -12,7 +12,7 @@ build() {
     -X '25-build-with-meta/meta/config.GitHash=$git_hash' \
     -X '25-build-with-meta/meta/config.BuildTime=$build_time' \
     -X '25-build-with-meta/meta/config.GoVersion=$go_version' \""
-    
+
   echo $cmd
   eval $cmd
 }
