@@ -3,12 +3,15 @@ package main
 /*
 #include <stdio.h>
 
-static void Say(const char* s) {
+void Say(const char* s) {
 	puts(s);
 }
 */
 import "C"
+import "unsafe"
 
 func main() {
-	C.Say(C.CString("hi cgo"))
+	cstr := C.CString("hi, cgo")
+	C.Say(cstr)
+	C.free(unsafe.Pointer(cstr))
 }
