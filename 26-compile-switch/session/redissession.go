@@ -1,0 +1,2 @@
+// +build sessredis
+package session
