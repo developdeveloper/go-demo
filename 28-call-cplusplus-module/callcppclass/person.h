@@ -26,5 +26,5 @@ Person::Person(string name, int age)
 
 void Person::Say()
 {
-  cout << "name:, " << this->name << ", age: " << this->age;
+  cout << "name: " << this->name << ", age: " << this->age;
 }
