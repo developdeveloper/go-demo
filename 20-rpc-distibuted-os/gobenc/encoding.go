@@ -17,13 +17,13 @@ func main() {
 	enc1 := gob.NewEncoder(os.Stdout)
 	enc1.Encode(p1)
 
-	file1, _ := os.OpenFile("/tmp/person.gob", os.O_CREATE|os.O_WRONLY, 0644)
+	file1, _ := os.OpenFile("/tmp/callcppclass.gob", os.O_CREATE|os.O_WRONLY, 0644)
 	enc2 := gob.NewEncoder(file1)
 	enc2.Encode(p1)
 	file1.Close()
 
 	var p2 person
-	file2, _ := os.Open("/tmp/person.gob")
+	file2, _ := os.Open("/tmp/callcppclass.gob")
 	defer file2.Close()
 	dec := gob.NewDecoder(file2)
 	dec.Decode(&p2)

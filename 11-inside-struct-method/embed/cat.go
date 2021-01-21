@@ -16,7 +16,7 @@ type cat struct {
 	addr  // 匿名字段
 }
 
-// type person struct {
+// type callcppclass struct {
 // 	sex     string
 // 	address string
 // 	phone   string

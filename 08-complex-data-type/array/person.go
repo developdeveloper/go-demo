@@ -2,7 +2,7 @@ package array
 
 import "fmt"
 
-//person 人
+//callcppclass 人
 type person struct {
 	Name string
 	Age  int
