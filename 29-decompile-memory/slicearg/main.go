@@ -12,22 +12,27 @@ func main() {
 }
 
 /*
-0x001d 00029 (main.go:11)	LEAQ	type.[3]int(SB), AX
-0x0024 00036 (main.go:11)	MOVQ	AX, (SP)
-0x0028 00040 (main.go:11)	PCDATA	$1, $0
-0x0028 00040 (main.go:11)	CALL	runtime.newobject(SB)
-0x002d 00045 (main.go:11)	MOVQ	8(SP), AX
-0x0032 00050 (main.go:11)	MOVQ	$1, (AX)    // 元素1  8(SP)
-0x0039 00057 (main.go:11)	MOVQ	$2, 8(AX)   // 元素2 16(SP)
-0x0041 00065 (main.go:11)	MOVQ	$3, 16(AX)  // 元素3 24(SP)
-0x0049 00073 (main.go:11)	MOVQ	AX, (SP)    // Data 地址
-0x004d 00077 (main.go:11)	MOVQ	$3, 8(SP)   // Len 大小
-0x0056 00086 (main.go:11)	MOVQ	$3, 16(SP)  // Cap 大小
-0x005f 00095 (main.go:11)	NOP
-0x0060 00096 (main.go:11)	CALL	"".printSlice(SB)
-0x0065 00101 (main.go:12)	MOVQ	24(SP), BP
-0x006a 00106 (main.go:12)	ADDQ	$32, SP
-0x006e 00110 (main.go:12)	RET
+	0x000f 00015 (main.go:10)	SUBQ	$32, SP
+	0x0013 00019 (main.go:10)	MOVQ	BP, 24(SP)
+	0x0018 00024 (main.go:10)	LEAQ	24(SP), BP
+	0x001d 00029 (main.go:10)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x001d 00029 (main.go:10)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x001d 00029 (main.go:11)	LEAQ	type.[3]int(SB), AX
+	0x0024 00036 (main.go:11)	MOVQ	AX, (SP)
+	0x0028 00040 (main.go:11)	PCDATA	$1, $0
+	0x0028 00040 (main.go:11)	CALL	runtime.newobject(SB)
+	0x002d 00045 (main.go:11)	MOVQ	8(SP), AX
+	0x0032 00050 (main.go:11)	MOVQ	$1, (AX)    // 元素1  8(SP)
+	0x0039 00057 (main.go:11)	MOVQ	$2, 8(AX)   // 元素2 16(SP)
+	0x0041 00065 (main.go:11)	MOVQ	$3, 16(AX)  // 元素3 24(SP)
+	0x0049 00073 (main.go:11)	MOVQ	AX, (SP)    // Data 地址
+	0x004d 00077 (main.go:11)	MOVQ	$3, 8(SP)   // Len 大小
+	0x0056 00086 (main.go:11)	MOVQ	$3, 16(SP)  // Cap 大小
+	0x005f 00095 (main.go:11)	NOP
+	0x0060 00096 (main.go:11)	CALL	"".printSlice(SB)
+	0x0065 00101 (main.go:12)	MOVQ	24(SP), BP
+	0x006a 00106 (main.go:12)	ADDQ	$32, SP
+	0x006e 00110 (main.go:12)	RET
 
 "".printSlice STEXT size=175 args=0x18 locals=0x58
   0x0000 00000 (main.go:6)	TEXT	"".printSlice(SB), ABIInternal, $88-24
