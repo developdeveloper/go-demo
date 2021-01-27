@@ -9,6 +9,9 @@ func Test_factor(t *testing.T) {
 	fmt.Println(factor(6))
 	fmt.Println(factor2(6))
 	fmt.Println(factor2(10))
+
+	//factor2(100000000) // stack overflow
+	//tailFactor(100000000-1, 100000000) // stack overflow
 }
 
 func Benchmark_factor2(b *testing.B) {

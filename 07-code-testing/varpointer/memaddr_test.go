@@ -1,6 +1,8 @@
 package varpointer
 
-import "testing"
+import (
+	"testing"
+)
 
 func Test_incUpdateScore(t *testing.T) {
 	checkEqual := func(t *testing.T, expected, got int) {
