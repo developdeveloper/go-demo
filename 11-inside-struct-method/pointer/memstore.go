@@ -28,8 +28,7 @@ func main() {
 	// 0xc0000a6040
 	fmt.Printf("%p\n", namePtr)
 
-	//这种写法可以运行，但是被认为可能被 GC 回收导致不可预期的错误
-	//TODO 重现的方法
+	//see https://pkg.go.dev/unsafe#ArbitraryType
 	//ptr := uintptr(pointer)
 	//agePtr := (*int64)(unsafe.Pointer(ptr + unsafe.Offsetof(p.Money)))
 
