@@ -41,7 +41,7 @@ func move(p *point) {
 ./main.go:36:10: new(point) does not escape
 */
 func main() {
-	// 分配到栈上
+	// 分配到栈上，注意 move 函数被内敛了
 	p := new(point)
 	move(p)
 	print(p)
